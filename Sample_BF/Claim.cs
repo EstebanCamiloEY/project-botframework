@@ -11,6 +11,7 @@
             Amount = amount;
             Concept = concept;
             ClientComment = clientComent;
+            OpenAIComment = "";
         }
 
         public void SetAsClose() => State = "Cerrada";
@@ -21,5 +22,6 @@
         public int Amount { get; set; }
         public string Concept { get; set; }
         public string ClientComment { get; set; }
+        public string OpenAIComment { get; set; }
     }
 }
