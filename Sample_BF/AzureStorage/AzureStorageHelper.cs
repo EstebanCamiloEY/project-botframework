@@ -1,5 +1,5 @@
-﻿namespace Sample_BF.AzureStorage;
-using Azure.Data.Tables;
+﻿using Azure.Data.Tables;
+namespace Sample_BF.AzureStorage { 
 public class AzureStorageHelper
 {
     public TableEntity insert(Claim rk)
@@ -19,5 +19,6 @@ public class AzureStorageHelper
         tableClient.AddEntity(entity);
         return entity;
     }
+}
 }
 
